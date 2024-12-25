@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DIMAS SAPUTRA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .btn {
+            background-color: #ff7f50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 20px;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Explore the beauty of animation and design.</p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <section>
+        <h2>Our Features</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="nature.png" alt="Nature">
+                <h3>Beautiful Design</h3>
+                <p>kami membuat desain yang secara visual menabjubkan san fungsional.</p>
+            </div>
+            <div class="card">
+                <img src="tecnology.png" alt="Technology">
+                <h3>Modern Technology</h3>
+                <p>situs web kami dibangun dengan teknologi mutakhir.</p>
+            </div>
+            <div class="card">
+                <img src="illustration.png" alt="Innovation">
+                <h3>Innovative Ideas</h3>
+                <p>kami mewujudan ide inovatif melalui pekerjaan kami.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Situs web keren saya. All rights reserved.</p>
+    </footer>
+</body>
+</html>

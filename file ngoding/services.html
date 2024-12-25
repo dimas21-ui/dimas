@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+            letter-spacing: 2px;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            justify-items: center;
+            align-items: start;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .service-card {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .service-card .service-icon {
+            font-size: 60px;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.2);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-card .learn-more {
+            font-size: 18px;
+            color: #2575fc;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .service-card .learn-more:hover {
+            color: #ff7e5f;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .services-container {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Layanan Kami</h1>
+    <div class="services-container">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Pengembangan Web</h3>
+            <p>Kami menawarkan layanan pengembangan situs web berkualitas tinggi yang responsif dan mudah digunakan.</p>
+            <a href="#" class="learn-more">Pelajari lebih lanjut</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Desain Grafis</h3>
+            <p>Kami menyediakan desain grafis kreatif, termasuk logo, brosur, dan materi promosi yang menarik.</p>
+            <a href="#" class="learn-more">Pelajari lebih lanjut</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Pengembangan Aplikasi</h3>
+            <p>Layanan pengembangan aplikasi mobile yang user-friendly untuk berbagai platform seperti Android dan iOS.</p>
+            <a href="#" class="learn-more">Pelajari lebih lanjut</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3>SEO & Pemasaran Digital</h3>
+            <p>Tingkatkan visibilitas online Anda dengan layanan SEO dan pemasaran digital yang teruji dan efektif.</p>
+            <a href="#" class="learn-more">Pelajari lebih lanjut</a>
+        </div>
+
+    </div>
+
+    <!-- Add Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
